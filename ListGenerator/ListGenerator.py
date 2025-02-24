@@ -7,8 +7,11 @@
 
 import random
 
-list_nums = []
-for i in range(30): 
-    list_nums.append(random.randint(5, 200))
-    print(list_nums[i], end=" ")
-print()
+def list_generator(n):
+    list_nums = []
+    for i in range(n): 
+        list_nums.append(random.randint(5, 200))
+        print(list_nums[i], end=" ")
+    print()
+
+list_generator(30)
